@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuni Jung - Product Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="../Project 2/p5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header/Navigation -->
+        <div class="header">
+            <div class="header-inner">
+                <div class="logo-wrap">
+                    <div class="logo">
+                        <img class="logo" src="../assets/favicon.png" alt="logo" />
+                    </div>
+                    <nav class="nav-menu">
+                        <a href="../Home/home.html" class="nav-item">HOME</a>
+                        <a href="../Home/home.html" class="nav-item">WORK</a>
+                        <a href="../About me/about me.html" class="nav-item">ABOUT</a>
+                        <div class="nav-item">CONNECT</div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="content-wrapper">
+                <!-- Image Section -->
+                <div class="image-section">
+                    <div id="abstract-clock-canvas"></div>
+                </div>
+
+                <!-- Text Section -->
+                <div class="text-section">
+                    <div class="text-content">
+                        <!-- Project Title -->
+                        <div class="project-card">
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h3>Abstract Clock</h3>
+                                    <div class="card-subtitle">
+                                        <p>Experimental clock that challenges the conventional, linear notion of time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Design Process -->
+                        <div class="project-card">
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h3>Design Process</h3>
+                                    <div class="card-description">
+                                        <p>This is an experimental clock that challenges the conventional, linear notion of time. I designed a one-minute-only clock where 60 lines, which appear to be interconnected, are scattered randomly across a canvas. As each second passes, one line disappears. After 60 seconds have elapsed, the canvas is left completely blank, at which point a new minute immediately begins and a fresh set of lines appears.<br/><br/>The most challenging parts of this clock's creation were making the 60 lines appear interconnected via the squares at their ends and implementing the effect of lines disappearing one by one every second.<br/><br/>With help from Gemini, I implemented the disappearing lines effect using the floor() function. Instead of removing lines one per second, the code redraws them in every millisecond. The number of lines to draw is determined by the equation: 60 (total lines) - floor[(elapsed milliseconds) / 1000]. This ensures that an integer number of lines is redrawn on the canvas each second, creating the visual effect of a line disappearing once per second.<br/><br/>Additionally, to give the clock a unique visual edge, I used an array to randomly assign the color and size of the connecting squares from within a predefined color palette.<br/>alues themselves.<br/><br/>Color Extraction: I extracted 3 to 5 most prominent colors from each outfit photo over the four days. These colors were stored as HSB (Hue, Saturation, Brightness) values, not RGB values.<br/></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrow Button -->
+                    <div class="arrow-button">
+                        <div class="arrow-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-divider"></div>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-link">Product Design Portfolio</div>
+                    <div class="footer-link">Resume</div>
+                    <div class="footer-link">Instagram</div>
+                    <div class="footer-link">LinkedIn</div>
+                </div>
+                <div class="footer-info">
+                    <div class="copyright">© YUNI JUNG</div>
+                    <div class="footer-divider-vertical"></div>
+                    <div class="update-date">Latest update on Nov 25th, 2025</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script src="../Project 2/sketch.js"></script>
+</body>
+</html>

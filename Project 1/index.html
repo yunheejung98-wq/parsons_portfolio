@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuni Jung - Product Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="../Project 1/p5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header/Navigation -->
+        <div class="header">
+            <div class="header-inner">
+                <div class="logo-wrap">
+                    <div class="logo">
+                        <img class="logo" src="../assets/favicon.png" alt="logo" />
+                    </div>
+                    <nav class="nav-menu">
+                        <a href="../Home/home.html" class="nav-item">HOME</a>
+                        <a href="../Home/home.html" class="nav-item">WORK</a>
+                        <a href="../About me/about me.html" class="nav-item">ABOUT</a>
+                        <div class="nav-item">CONNECT</div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="content-wrapper">
+                <!-- Image Section -->
+                <div class="image-section">
+                    <div id="data-portrait-canvas"></div>
+                </div>
+
+                <!-- Text Section -->
+                <div class="text-section">
+                    <div class="text-content">
+                        <!-- Project Title -->
+                        <div class="project-card">
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h3>Data Portrait : When Art meets Daily Outfit data</h3>
+                                    <div class="card-subtitle">
+                                        <p>Interactive Sound escape video using Pro Tools and Premiere Pro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Design Process -->
+                        <div class="project-card">
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h3>Design Process</h3>
+                                    <div class="card-description">
+                                        <p>I wanted to visualize personal data titled 'My Fashion Preferences and Color Usage Habits'. I believed that consistency and complexity in color choices better represent my style than simply the number of outfits worn.<br/><br/>Therefore, based on photos of daily outfits worn over four days, I conceived the idea of extracting the key colors used in each outfit, measuring the similarity between colors, and creating a visual relationship map.<br/><br/>Color Extraction: From each outfit photo over the four days, I extracted the 3 to 5 most prominent colors. These colors were stored as HSB values, not RGB values.<br/><br/>Reason for Choosing HSB: HSB allows for an intuitive grasp of similarity between colors (Hue). I judged it most suitable for this project, which involves placing shapes of visually similar colors close together.<br/><br/>Data Arrangement: All extracted color values were stored in a nested array named fashionData. Each element contains hue, saturation, brightness values, and the proportion of the garment it occupies (size), formatted as {h: 15, s: 75, b: 95, size: 40}.<br/><br/>I'll draft a Korean outline covering the requested 'Fashion Taste Data Portrait' concept, color extraction process, and coding principles. This draft is structured logically to meet the assignment requirements.<br/><br/>Draft Data Portrait Design Process<br/>1. Project Motivation and Data Selection<br/>This project aimed to visualize personal data titled 'My Fashion Preferences and Color Usage Habits'. I believed that the consistency and complexity of color choices (qualitative data) better represented my style than simply the number of clothes worn (quantitative data).<br/><br/>Therefore, based on photos of outfits worn daily over 4 days, I conceived the idea of extracting the key colors used in those outfits, measuring the similarity between colors, and creating a visual relationship map.<br/><br/>2. Color Extraction and Data Structuring Process<br/>The core of the data was the color values themselves.<br/><br/>Color Extraction: I extracted 3 to 5 most prominent colors from each outfit photo over the four days. These colors were stored as HSB (Hue, Saturation, Brightness) values, not RGB values.<br/><br/>Reason for Choosing HSB: HSB allows for an intuitive grasp of similarity between colors (Hue). We determined it was the most suitable for this project, which involves placing shapes of visually similar colors close together.<br/><br/>Data Arrangement: All extracted color values were stored in a nested array named fashionData. Each element contains hue, saturation, brightness values, and the proportion it occupies on the garment (size), e.g., {h: 15, s: 75, b: 95, size: 40}.<br/><br/>The code was implemented by integrating all color data from four days onto a single canvas to create a 'Color Relationship Map'.<br/><br/>Array Iteration: We used nested for loops to retrieve every date from the fashionData array and all the color information contained within it, ensuring nothing was missed.<br/><br/>Coordinate Mapping:<br/><br/>X-axis (Hue): I mapped each color's Hue value proportionally to its position on the canvas's X-axis. This causes shapes with similar hues (e.g., shades of yellow) to cluster closely together along the X-axis.<br/><br/>Y-axis (Saturation): Each color's Saturation value was mapped to its Y-axis position on the canvas. High-saturation (vibrant) colors are placed on one side, while low-saturation (near-monochromatic) colors are positioned on the opposite side, revealing patterns in color vividness.<br/><br/>Shape Size: The proportion (size) of each color in the outfit was mapped to the shape's size (radius). Larger circles represent colors of significant items like pants or tops, while smaller circles represent colors of minor accessories, indicating their importance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrow Button -->
+                    <div class="arrow-button">
+                        <div class="arrow-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-divider"></div>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-link">Product Design Portfolio</div>
+                    <div class="footer-link">Resume</div>
+                    <div class="footer-link">Instagram</div>
+                    <div class="footer-link">LinkedIn</div>
+                </div>
+                <div class="footer-info">
+                    <div class="copyright">© YUNI JUNG</div>
+                    <div class="footer-divider-vertical"></div>
+                    <div class="update-date">Latest update on Nov 25th, 2025</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script src="../Project 1/sketch.js"></script>
+</body>
+</html>
