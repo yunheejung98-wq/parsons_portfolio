@@ -75,7 +75,7 @@ body {
   height: 500px; /* SVG가 보일 수 있도록 임시 높이 강제 지정 */
   position: relative;
   overflow: hidden;
-  background: red;
+  background: transparent;
 }
 
 /* SVG 이미지 자체는 컨테이너에 맞게 비율 조정 */
