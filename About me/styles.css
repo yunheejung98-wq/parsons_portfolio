@@ -68,7 +68,6 @@ body {
 .left-panel {
   flex: 1 1 0;
   height: 742px;
-  background: #222222;
   min-width: 0;
   border-radius: 2px;
 }
