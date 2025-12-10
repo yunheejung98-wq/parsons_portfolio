@@ -1,0 +1,63 @@
+/* Basic reset and root styles */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:"Helvetica Neue", Arial, sans-serif}
+
+/* Main container */
+.separated-root{
+  width:100%;
+  min-height:100vh;
+  background:#222222;
+  overflow:hidden;
+  display:inline-flex;
+  flex-direction:column;
+  gap:22px;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+
+/* Topbar */
+.topbar-outer{
+  width:100%;
+  padding:36px 104px;
+}
+.topbar-inner{
+  display:flex;align-items:center;justify-content:space-between;width:100%;
+}
+.logo-img{width:72px;height:64px;display:block}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-item{color:#ffffff;font-size:16px;font-weight:400;letter-spacing:0.16px}
+
+/* Content area */
+.content-outer{width:100%;padding:0 105px;display:flex;flex-direction:column;gap:60px}
+.canvas-area{position:relative;height:928px;width:100%;}
+/* Decorative absolute elements are left inline in the HTML to preserve exact positions */
+
+/* Projects list */
+.projects-list{display:flex;flex-direction:column;gap:16px}
+.project{display:inline-flex;align-items:flex-start;gap:20px;border:0.75px solid rgba(255,255,255,0.0);}
+.project-thumb img{height:231px;display:block}
+.project-info{padding:16px 12px;color:#ffffff;flex:1}
+.project-title{font-size:16px;font-weight:400;margin:0 0 8px}
+.project-desc{font-size:14px;font-weight:300;margin:0 0 6px;color:#ffffff}
+.project-date{font-size:12px;color:#676767}
+
+.project-action{display:flex;align-items:center;justify-content:center;padding:8px;border:0.75px solid white}
+.swatch-inner{width:19px;height:26px;background:#231F20}
+.swatch-pink{background:#E4A2B0}
+.swatch-green{background:#E1EF64}
+.swatch-blue{background:#688DEB}
+
+/* Footer */
+.site-footer{padding:20px 105px;background:#222222;color:#8E8E8E}
+.footer-inner{display:flex;flex-direction:column;gap:14px}
+.hr{height:1px;background:#E4E4E4;width:100%}
+.footer-links{display:flex;gap:14px}
+.footer-meta{display:flex;align-items:center;gap:9px}
+.footer-meta .dot{width:1px;height:10px;background:#E8E8E8;display:inline-block}
+
+/* Small responsive tweaks */
+@media (max-width:900px){
+  .topbar-outer{padding:20px}
+  .content-outer{padding:0 20px}
+  .project{flex-direction:column}
+}
